@@ -5,7 +5,7 @@ const Home = (props) => {
     <div>
       <p>Home</p>
       <Link href='/sell'>
-        Sell
+        <a>Sell</a>
       </Link>
     </div>
   );
