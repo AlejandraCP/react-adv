@@ -1,18 +1,16 @@
 import App, { container} from 'next/app'
+import Page from '../components/Page';
 
 class MyApp extends App {
   
   render() { 
 
-    const { Component} = this.props
-    console.log(this.props);
-    
+    const { Component} = this.props    
     return ( 
       <container>
-        <div>
-          <p>Estoy en todas las rutas</p>
-        </div>
-        <Component/>
+        <Page>
+          <Component/>
+        </Page>
       </container>
      );
   }
